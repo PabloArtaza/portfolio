@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg);
+    font-size: 10px;
+    
+}
+
+/*NAVBAR*/
+.nav{
+    font-size: 1.5em;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background-color: grey ;
+    opacity: 70%;
+    justify-content: center;
+}
+.nav-link{
+    color: lawngreen;
+}
+.nav-link:hover{
+    color:black;
+    text-shadow: white 2px 2px;
+}
+li:hover{
+    background-color:lawngreen;
+    border-radius: 10px;  
+    
+}
+#lk{
+    color: black;
+    font-size: 2em;
+    justify-content: end;
+}
+#lk:hover{
+    color: none;
+    transition: none;
+    transform: none;   
+}
+
+/*AboutMe*/
+.cv{
+    clip-path: circle(40% at 50% 50%);
+    width: 380px;
+}
+h1{
+    color: gold; 
+    animation-name: ani;
+    animation-duration: 60s;
+    animation-delay: 1s;
+    opacity: 0%;
+    animation-iteration-count: infinite;   
+}
+h2{
+    color: goldenrod;
+    animation-duration: 60s;
+    animation-delay: 4s;
+    animation-name: ani;
+    opacity: 0%;
+    animation-iteration-count: infinite;
+}
+.p{
+    font-size: 1.5em;
+    color: rgb(196, 160, 70);
+    animation-duration: 60s;
+    animation-name: ani;
+    animation-delay: 6s;
+    opacity: 0%;
+    animation-iteration-count: infinite;
+}
+@keyframes ani {
+    0%{  opacity: 0%;}
+    15%{ opacity: 50%;}
+    50%{ opacity: 100%;}
+    75% { opacity: 100%;}
+    100%{ opacity: 100%;}
+    
+}
+/*SKILLS*/
+.container-fluid{
+    font-size: 50px;
+}
+h3{
+    color: orangered;
+}
+h3:hover{
+    color: peachpuff;
+}
+
+.fab:hover{
+    transform: scale(1.5);
+    transition: 0.1s linear;
+    color:orangered;  
+}
+/*PROYECTS*/
+h4{
+    color: rgb(37, 228, 241);
+}
+h4:hover{
+    color: peachpuff;
+}
+.card{
+    background-color:  rgb(245, 147, 19);
+    opacity: 70%;   
+}
+
+.card:hover{
+    opacity: 100%;
+    transition: ease; 
+}
+.btn{
+    background-color: cadetblue;
+}
+/*FORM*/
+label{
+    font-size: 0.25em;
+}
+.form-control{
+    font-size: 0.2em;
+    opacity: 40%;
+}
+#contact{
+    color: rgb(193, 219, 100);
+}
+
+/*FOOTER*/
+h5{
+    font-size: 1em;
+}
+/*RESPONSIVE*/
+
+@media screen and (max-width:768px){
+   .nav{
+        font-size: 0.6em;
+        justify-content: center;
+    }
+/*aboutMe*/
+    .cv{
+        clip-path: circle(40% at 50% 50%);
+        width: 200px;
+        
+    }
+    h1, h2{
+        font-size: 1.5em;
+    }
+    
+    p{
+       font-size: 1em;
+   }
+   #lk{
+       font-size: 2em;
+       margin-top: 0.4em;
+   }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .nav{
+        
+        justify-content: center;
+    }
+    
+}
